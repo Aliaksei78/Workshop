@@ -1,4 +1,7 @@
-class AccessoriesPage {
+import MainPage from "./mainPage"
+
+
+class AccessoriesPage extends MainPage {
 
     open() {
         cy.visit(Cypress.env('storeUrl') + '/us/collection/accessories_wall?hl=en-US')

@@ -1,8 +1,8 @@
-class SearchResultsPage {
+import MainPage from "./mainPage"
 
-    getProductByHref(link) {
-        return cy.get(`a[href="${link}"]`)
-    }
+
+class SearchResultsPage extends MainPage {
+
 }
 
 export default SearchResultsPage
