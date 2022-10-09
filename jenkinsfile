@@ -13,12 +13,12 @@ pipeline {
                 // will use Cypress Dashboard to load balance any found spec files
                 stage('Run tests in parallel 1 - browser Google Chrome') {
                     steps {
-                        bat 'npx cypress run --record false --browser chrome --headed --key a2d437f4-13df-420d-9048-7e41e56abd01 --parallel'
+                        bat 'npx cypress run --record --browser chrome --headed --key a2d437f4-13df-420d-9048-7e41e56abd01 --parallel'
                     }
                 }
-                stage('Run tests in parallel 2 - browser Mozilla Firefox') {
+                stage('Run tests in parallel 2 - browser Microsoft Edge') {
                     steps {
-                        bat 'npx cypress run --record false --browser edge --headed --key a2d437f4-13df-420d-9048-7e41e56abd01 --parallel'
+                        bat 'npx cypress run --record --browser edge --headed --key a2d437f4-13df-420d-9048-7e41e56abd01 --parallel'
                     }
                 }
             }
