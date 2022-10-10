@@ -18,7 +18,7 @@ pipeline {
                 }
                 stage('Run tests in parallel 2') {
                     steps {
-                        bat 'node_modules/.bin/cypress cypress run --record --key a2d437f4-13df-420d-9048-7e41e56abd01 --parallel'
+                        bat 'node_modules/.bin/cypress run --record --key a2d437f4-13df-420d-9048-7e41e56abd01 --parallel'
                     }
                 }
             }
